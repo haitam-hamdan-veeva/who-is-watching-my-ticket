@@ -1,5 +1,5 @@
 # Who Is Watching My Ticket
-Simple ampermonkey script to display avatar-less Zendesk agents' names.
+Simple Tampermonkey script to display avatar-less Zendesk agents' names.
 ## Demo
 ![demo](https://github.com/haitam-hamdan-veeva/who-is-watching-my-ticket/blob/main/images/demo.gif)
 ## How to install
