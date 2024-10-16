@@ -12,3 +12,8 @@ Simple Tampermonkey script to display avatar-less Zendesk agents' names.
 5. Ensure that the script is toggled ON:  
 ![enable script](https://github.com/haitam-hamdan-veeva/who-is-watching-my-ticket/blob/main/images/enable_script.png)
 6. Navigate to your Zendesk ticket and refresh the page
+## TODO
+- [ ] Fix viewers with a middle name are not displaying fully
+- [ ] Fix a bug where the name flicker from up to down on load (default positioning should be under the avatar)
+- [ ] Enhance the flexbox containers to support readability
+- [ ] Enhance the main function call to support [MutationObserver()](https://developer.mozilla.org/en-US/docs/Web/API/MutationObserver/observe)
