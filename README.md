@@ -15,5 +15,5 @@ Simple Tampermonkey script to display avatar-less Zendesk agents' names.
 ## TODO
 - [ ] Fix viewers with a middle name are not displaying fully
 - [ ] Fix a bug where the name flicker from up to down on load (default positioning should be under the avatar)
-- [ ] Enhance the flexbox containers to support readability
+- [x] Enhance the flexbox containers to support readability
 - [ ] Enhance the main function call to support [MutationObserver()](https://developer.mozilla.org/en-US/docs/Web/API/MutationObserver/observe)
