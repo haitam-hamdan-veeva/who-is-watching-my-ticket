@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Who Is Watching My Ticket?
 // @namespace    http://tampermonkey.net/
-// @version      2024-10-08
+// @version      2024-10-22
 // @description  Displays the name of non-avatar Zendesk agents
 // @author       Haitam Hamdan
 // @match        https://veeva.zendesk.com/agent/tickets/*
@@ -22,10 +22,12 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-right: 2px;
+    margin-right: 8px;
   }
   .viewer-name {
     padding: 1px;
+    display: flex;
+    justify-content: center;
   }
   `;
 
@@ -76,14 +78,8 @@
     const containerElement = document.createElement('div');
     containerElement.classList.add('viewer-container');
 
-    const firstNameElement = createViewerSpan(viewerName[0], [
-      'first-name',
-      'viewer-name',
-    ]);
-    const lastNameElement = createViewerSpan(viewerName[1], [
-      'last-name',
-      'viewer-name',
-    ]);
+    const firstNameElement = createViewerSpan(viewerName[0], ['first-name', 'viewer-name']);
+    const lastNameElement = createViewerSpan(viewerName[1], ['last-name', 'viewer-name']);
 
     containerElement.appendChild(firstNameElement);
     containerElement.appendChild(lastNameElement);
